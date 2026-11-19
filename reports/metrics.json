@@ -1,0 +1,9 @@
+{
+  "dataset": "NASA C-MAPSS FD001",
+  "test_engines": 100,
+  "rmse": 12.35,
+  "nasa_score": 249.6,
+  "within_20_cycles": 0.9,
+  "urgent_recall": 0.812,
+  "urgent_precision": 0.929
+}
