@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rul-predictor"
+version = "1.0.0"
+description = "Predictive maintenance: remaining useful life of turbofan engines (NASA C-MAPSS) with a REST API."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Dhia Kanzari" }]
+license = { text = "MIT" }
+dependencies = ["numpy", "pandas", "scikit-learn>=1.3", "matplotlib", "joblib", "fastapi", "uvicorn", "pydantic>=2"]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
